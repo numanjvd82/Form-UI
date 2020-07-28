@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #1e1e64;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  background-color: #eae6f6;
+  overflow: hidden;
+}
+
+.circle-blue {
+  background-color: var(--primary-color);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 85%;
+  z-index: 1;
+}
+
+.circle-white {
+  background-color: #fff;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+.left-column {
+  margin: 20px 0px;
+  padding: 50px 20px;
+  height: 500px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  z-index: 10;
+}
+
+.left-column p {
+  font-weight: 400;
+  color: #7c7c94;
+}
+
+.left-column h4 {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.underline-text {
+  border-bottom: 4px dotted #ca3185;
+}
+
+.right-column {
+  background-color: #d6daeb;
+  margin: 20px 0px;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+  z-index: 10;
+}
+
+.right-column h2,
+p {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.right-column a {
+  text-decoration: none;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 600px;
+  margin: 0px 50px;
+}
+
+input[type="text"] {
+  margin: 10px 0;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+input[type="email"] {
+  margin: 10px 0;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+input[type="password"] {
+  margin: 10px 0;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 2px solid var(--primary-color);
+}
+
+label {
+  color: var(--primary-color);
+}
+
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 100px;
+  font-weight: 600;
+  font-size: large;
+  margin: 0 150px 0 150px;
+  cursor: pointer;
+  outline: none;
+  z-index: 10;
+}
+
+.button:hover {
+  background-color: #0c0c38;
+}
